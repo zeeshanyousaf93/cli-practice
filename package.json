@@ -2,7 +2,7 @@
   "name": "cli-practice",
   "version": "0.0.0",
   "description": "This repository contains the starter files for the 'CLI Practice' exercise.",
-  "main": "index.js",
+  "main": "src/currency-converter.js",
   "scripts": {
     "test": "jest"
   },

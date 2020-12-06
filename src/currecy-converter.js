@@ -1,6 +1,6 @@
 // This file will contain the primary logic for the currency conversion program.
 // To run the program use the `node` command followed by the name of this file.
-// ie. `node index.js`.
+// ie. `node currency-converter.js`.
 
 // This file has been split up into several sections, each of which focuses on a
 // portion of the program. Completing each of these sections in order should result

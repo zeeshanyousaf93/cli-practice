@@ -22,8 +22,8 @@ You must also have Node installed on your local system. See the resources sectio
 ## Goals
 At a minimum, your submission should include the following features, functionality, and tests:
 - The ability to convert between USD and CAD, as well as between CAD and USD. For example:
-  - `node src/index.js 50 USD CAD`
-  - `node src/index.js 50 CAD USD`
+  - `node src/currency-converter.js 50 USD CAD`
+  - `node src/currency-converter.js 50 CAD USD`
 - Upon successful conversion, a message that displays the amount, initial currency, target currency, and the result.
 - Basic handling of missing user input. For example, a generic message which informs the user that either the amount, initial currency, or target currency values are missing.
 - Basic handling of invalid user input, specifically the currency information. For example, a generic message which informs the user that there is no conversion rate for the currencies supplied.
@@ -47,11 +47,11 @@ This exercise includes both implementation (eg. writing code for the currency co
 
 As usual, you are free to approach this exercise however you see fit. If you would like some additional help, feel free to use the following approach:
 
-- Review the contents of the `src/index.js` file.
+- Review the contents of the `src/currency-converter.js` file.
 - Complete and commit each step in sequence. Make sure to test each step before moving on to the next.
 - After completing your implementation, review the code and identify which portions can be moved into functions.
 - Move the code that you have identified into functions. Update the program to use the new functions. Make sure to re-test the program.
-- After confirming the program still works as expected, move the functions into a new file (eg. `src/functions.js`)`. Update the file so that the functions are exported. Update the original program (ie. `src/index.js`) to import the functions from the new file. Re-test the program.
+- After confirming the program still works as expected, move the functions into a new file (eg. `src/functions.js`)`. Update the file so that the functions are exported. Update the original program (ie. `src/currency-converter.js`) to import the functions from the new file. Re-test the program.
 - Now that the functions are _separate_ from the program itself they can be tested more easily. Import each function into the `test/index.test.js` file.
 - Define and implement a series of tests to ensure that each function works as expected.
 
