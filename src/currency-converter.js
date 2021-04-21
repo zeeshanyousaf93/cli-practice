@@ -69,3 +69,33 @@
 
 // This message should also include the original amount and currency information
 // supplied by the user.
+const readline = require("readline").createInterface({
+	  input: process.stdin,
+	  output: process.stdout,
+});
+
+readline.prompt();
+
+readline.on('line', (line) => {
+	  var USDTOCAD = 1.25765;
+	  var CADTOUSD = 0.795131;
+	  var PAKTOUSD = 0.00652735;
+	  var USDTOPAK = 153.203;
+
+	  var arr = line.split(" ");
+	  var number = arr[0];
+	  if (arr[1] == "USD" && arr[2] == "CAD") {
+		      console.log(`${number}, ${arr[1]}, ${arr[2]},${USDTOCAD * number}`);
+		    }
+	  if (arr[1] == "CAD" && arr[2] == "USD") {
+		      console.log(`${number}, ${arr[1]}, ${arr[2]}, ${CADTOUSD * number}`);
+		    }
+	  if (arr[1] == "PKR" && arr[2] == "USD") {
+		      console.log(`${number}, ${arr[1]}, ${arr[2]}, ${PAKTOUSD * number}`);
+		    }
+	  if (arr[1] == "USD" && arr[2] == "PKR") {
+		      console.log(`${number}, ${arr[1]}, ${arr[2]}, ${USDTOPAK * number}`);
+		    }
+	  // We can split as much currencies we want
+	   readline.close();
+	 });
